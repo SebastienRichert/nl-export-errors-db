@@ -1,23 +1,19 @@
-Program to export errors from database README
-=============================================
+# Program to export errors from database README
 
-Copyright (c) 2005-2017 Neotys SAS
-All Rights Reserved
+## Introduction
 
-1. Introduction
-===============
 This is a program to export errors from database, in a very specific format.
 
-2. Usage
-=======
+## Usage
+
 Arguments: 
 -db: input errors database (mandatory)
 -out: output folder (mandatory)
 -minTimeMs: the minimun time in milliseconds (optional)
 -maxTimeMs: the maximum time in milliseconds (optional)
 
-3. Example
-==========
+# Example
+
 For example with a 1 hour test:
 
 - export all entries:
@@ -33,8 +29,8 @@ prompt>java -jar  ExportErrorsDB.jar -db "<path-to-test-result>\errors.db" -out 
 prompt>java -jar  ExportErrorsDB.jar -db "<path-to-test-result>\errors.db" -out "<output-folder>" -minTime 600000 -max 3000000
 
 
-4. Output
-=========
+## Output
+
 There is one folder per error entry.
 The name of the folder is : <userID>_<userInstance>_<<wbr>iteration>_<loadGeneratorId>_<<wbr>timestamp>
 
@@ -75,8 +71,8 @@ assertion-key:size.lower value: [247, 3333]
 If the response is not stored, then the content of the response will be the same as shown in NeoLoad :
 << Response not stored. NeoLoad did not save the details of this error. For more information, see the first occurrences of this error.>>
 
-5. Limitations
-==============
+## Limitations
+
 The program is a Windows 32 bits executable to be used with Java 7 or higher.
 
 This program only work from NeoLoad version 5.5.0 to version 6.0 (included).
@@ -89,16 +85,6 @@ Here are the technical limits of this program :
 - we won't have a human readable details of the assertion as shown in NeoLoad.
 - we don't have the time is absolute value because the error database only contains relative times.
 
-6. Sources
-==========
-Sources are located on our SVN repository: 
-http://gandalf.intranet.neotys.com:18080/svn/svnroot/InternalUtils/ExportErrorsDB
- 
- 7. Contact
- ==========
-For any questions, please contact: 
-sebastien.richert@neotys.com
- 
- 
+
  
  
