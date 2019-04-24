@@ -57,22 +57,22 @@ The folder contains 5 files :
 - previous-request.txt for details of the previous request sent to the server,
 - previous-response.txt for details of the response of the previous request sent to the server,
 - details.txt with the below format :
-* timestamp: 60000
-* userID: f745febc-3f0e-460c-bfd8-<wbr>a9a3a75d1b97
-* userInstance: 0
-* iteration: Action1
-* isRequestError: false
-* responseCode: 200
-* loadGeneratorID: 0
-* population: Population1
-* transactionId: 0
-* duration: 1000
-* ttfb: 1000
-* size: 1000
-* previousRequestID: 13
-* nbAssertions: 2
-* assertion-key:size.not.equal value: [247, 5555]
-* assertion-key:size.lower value: [247, 3333]
+	* timestamp: 60000
+	* userID: f745febc-3f0e-460c-bfd8-<wbr>a9a3a75d1b97
+	* userInstance: 0
+	* iteration: Action1
+	* isRequestError: false
+	* responseCode: 200
+	* loadGeneratorID: 0
+	* population: Population1
+	* transactionId: 0
+	* duration: 1000
+	* ttfb: 1000
+	* size: 1000
+	* previousRequestID: 13
+	* nbAssertions: 2
+	* assertion-key:size.not.equal value: [247, 5555]
+	* assertion-key:size.lower value: [247, 3333]
 
 If the response is not stored, then the content of the response will be the same as shown in NeoLoad :
 
