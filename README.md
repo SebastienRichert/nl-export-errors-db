@@ -12,7 +12,7 @@ Arguments:
 -minTimeMs: the minimun time in milliseconds (optional)
 -maxTimeMs: the maximum time in milliseconds (optional)
 
-# Example
+## Example
 
 For example with a 1 hour test:
 
