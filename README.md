@@ -4,6 +4,8 @@
 
 This is a program to export errors from database, in a very specific format.
 
+Download the [latest release](https://github.com/SebastienRichert/nl-export-errors-db/releases/latest).
+
 ## Usage
 
 Arguments: 
